@@ -9,6 +9,7 @@ import { Component, OnInit, OnChanges, Input } from '@angular/core';
 export class AppComponent {
   login :string = "";
   password :string = "";
+  renderLogin:Boolean = false;
   title = 'lojaApp';
   constructor() {}
   ngOnInit() {

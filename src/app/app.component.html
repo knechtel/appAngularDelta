@@ -6,6 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div [hidden]="renderLogin">
 <h1>
   <p>{{title}}</p>
 </h1>
@@ -18,12 +19,13 @@
   <tr>
     <td>Password</td>
     <td><input type="password" [(ngModel)]="password" /></td>
-
   </tr>
   <tr>
     <td> <button type="button" (click)="onClickMe()">Click me!</button></td>
   </tr>
 </table>
+</div>
+<app-footer></app-footer>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -33,21 +35,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
-
-<style>
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-</style>
-
-<div class="footer">
-  <p>2022</p>
-
-  <p>@Copyright</p>
-</div>
